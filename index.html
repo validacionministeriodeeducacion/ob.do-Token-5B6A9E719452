@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado Nivel Medio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .titulo-certificado {
+    background-color: #1a1d23; /* Color negro con tono adecuado */
+    color: white; /* Texto en color blanco */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado */
+    padding: 12px 0; /* Espaciado vertical */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    border-radius: 6px 6px 0 0; /* Bordes redondeados solo arriba */
+}
+
+
+        button {
+            width: 20%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buscar {
+            background-color: #000102;
+            color: white;
+        }
+        .pdf {
+            background-color: #000702;
+            color: white;
+        }
+
+        
+        /* Contenedor superior (logo y barra de búsqueda) */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar p {
+            margin-right: 15px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .search-bar a {
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            color: #0066cc;
+        }
+
+        /* Contenedor del certificado */
+        .container {
+            background-color: #ffffff;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra superior con logo y opciones de búsqueda -->
+    <div class="header-top">
+        <div>
+            <a href="https://www.ministeriodeeducacion.gob.do/" target="_blank">
+            <img src="logo.png" alt="Logo Ministerio de Educación" class="logo"></a>
+        </div>
+    
+    
+
+        <div class="search-bar">
+            <p>¿Qué estás buscando?</p>
+            <input type="text" placeholder="Buscar...">
+            <li><a href="https://www.ministeriodeeducacion.gob.do/">Inicio</a></li>
+            <a href="https://www.ministeriodeeducacion.gob.do/mapa-de-sitio">Mapa del Sitio</a>
+            <a href="https://www.ministeriodeeducacion.gob.do/contactos">Contactos</a>
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/">Inicio</a></li>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/sobre-nosotros/quienes-somos">Sobre Nosotros</a></li>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/servicios">Servicios</a></li>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/transparencia/">Transparencia</a></li>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/comunicaciones/noticias">Noticias</a></li>
+            <li><a href="https://www.ministeriodeeducacion.gob.do/contactos">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido del Certificado -->
+    <div class="container">
+        <section class="certificado">
+            <div class="titulo-certificado">
+                <h3>Consulta de Certificado</h3>
+            </div>
+        </section>
+    </div><br><p>
+    
+        <div class="container">
+           
+    
+            <div class="input-container">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" placeholder="Código">
+                <input type="text" id="token" placeholder="Token del reporte">
+                <button class="buscar" onclick="buscarCertificado()">BUSCAR</button>
+            </div>
+            <a href="certificado.pdf" download="MiDocumento.pdf">
+            <button class="pdf" onclick="generarPDF()">GENERAR PDF</button></a>
+    
+    
+  
+
+
+<h1>Certificado Nivel Secundaria
+</h1><br>
+                  <table>
+                <tr>
+                    <th>Nombre Completo</th>
+                    <td>DEIDANIA PUELLO</td>
+                </tr>
+                <tr>
+                    <th>Código del Centro</th>
+                    <td>DP-9805050002</td>
+                </tr>
+                <tr>
+                    <th>Nombre del Centro</th>
+                    <td>LICEO CAPOTILLO</td>
+                </tr>
+                <tr>
+                    <th>Código Regional</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>Nombre Regional</th>
+                    <td>SANTO DOMINGO</td>
+                </tr>
+                <tr>
+                    <th>Código Distrito</th>
+                    <td>15-02</td>
+                </tr>
+                <tr>
+                    <th>Nombre Distrito</th>
+                    <td>DISTRITO SANTO DOMINGO</td>
+                </tr>
+                <tr>
+                    <th>Estado</th>
+                    <td>APROBÓ EL PLAN DE ESTUDIO Y LAS PRUEBAS NACIONALES EN CONCLUSIÓN</td>
+                </tr>
+                <tr>
+                    <th>Modalidad</th>
+                    <td>EDUCACIÓN MEDIA</td>
+                </tr>
+               
+                <tr>
+                    <th>Año Escolar</th>
+                    <td>2014-2015</td>
+                </tr>
+                <tr>
+                    <th>Convocatoria</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Sección</th>
+                    <td>SP-E</td>
+                </tr>
+                <tr>
+                    <th>RNE</th>
+                    <td>DP-9805050002</td>
+                
+                </tr>
+                
+                <tr>
+                    <th>Fecha de Registro</th>
+                    <td id="fecha-registro"></td>
+                </tr>
+            </p>
+            </table>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <img src="01.png" width= "450"><br>
+        <h6><p>Ministerio de Educación de la República Dominicana
+            <br>
+        Avenida Máximo Gómez esquina Santiago, No.02 Gazcue, Distrito Nacional, República Dominicana.</p><br>
+        <p>Horario: De 7:30 a.m. a 4:30 p.m. de Lunes a Viernes.</p>
+       <p> Terminos de uso | Política de privacidad | Preguntas frecuentes</p><br>
+      <p> © 2022 MINISTERIO DE EDUCACIÓN | Todos los Derechos Reservados</p>
+        <p>Tel: 809-688-9700 | Email: info@minerd.gob.do</p></h6><br>
+    </footer>
+
+    <script>
+        // Obtener la fecha actual
+        var fecha = new Date();
+        var dia = String(fecha.getDate()).padStart(2, '0');
+        var mes = String(fecha.getMonth() + 1).padStart(2, '0'); // Los meses empiezan desde 0
+        var año = fecha.getFullYear();
+        var hora = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        var segundos = fecha.getSeconds();
+
+// Obtener la fecha y hora actual
+var fecha = new Date();
+
+// Extraer los componentes de la fecha
+var dia = fecha.getDate(); // Día del mes
+var mes = fecha.getMonth() + 1; // Mes (se suma 1 porque getMonth() devuelve de 0 a 11)
+var año = fecha.getFullYear(); // Año
+var hora = fecha.getHours(); // Horas
+var minutos = fecha.getMinutes(); // Minutos
+var segundos = fecha.getSeconds(); // Segundos
+
+// Asegurar que los números tengan dos dígitos (ejemplo: 01 en lugar de 1)
+if (dia < 10) dia = '0' + dia;
+if (mes < 10) mes = '0' + mes;
+if (hora < 10) hora = '0' + hora;
+if (minutos < 10) minutos = '0' + minutos;
+if (segundos < 10) segundos = '0' + segundos;
+
+// Formato de la fecha en español dominicano: DD/MM/YYYY HH:MM:SS
+var fechaRegistro = dia + '/' + mes + '/' + año + ' ' + hora + ':' + minutos + ':' + segundos;
+
+// Asignar la fecha al campo de "Fecha de Registro"
+document.getElementById('fecha-registro').textContent = fechaRegistro;
+function buscarCertificado() {
+            var codigo = document.getElementById('codigo').value;
+            var token = document.getElementById('token').value;
+
+            if (codigo === "" || token === "") {
+                alert("Por favor, ingrese el Código y el Token del Reporte.");
+                return;
+            }
+
+            alert("Buscando certificado con Código: " + codigo + " y Token: " + token);
+        }
+
+        // Función para generar un PDF
+        function generarPDF() {
+            var { jsPDF } = window.jspdf;
+            var doc = new jsPDF();
+
+            var codigo = document.getElementById('codigo').value;
+            var token = document.getElementById('token').value;
+            var fecha = obtenerFechaDominicana();
+
+            if (codigo === "" || token === "") {
+                alert("Por favor, ingrese el Código y el Token del Reporte antes de generar el PDF.");
+                return;
+            }
+
+            doc.text("Consulta de Certificados", 10, 10);
+            doc.text("Código: " + codigo, 10, 20);
+            doc.text("Token del Reporte: " + token, 10, 30);
+            doc.text("Fecha de Registro: " + fecha, 10, 40);
+            doc.save("certificado.pdf");
+        }
+    </script>
+</body>
+</html>
+
